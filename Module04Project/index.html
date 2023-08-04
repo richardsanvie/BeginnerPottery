@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Richard Store</title>
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #fff;
+        }
+        
+        body {
+            margin: 0 auto;
+            overflow-x: hidden;
+        }
+        
+        .nav-bar{
+            background-color: rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://source.unsplash.com/random);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }     
+
+        nav {
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin: 0 28px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        .container-0{
+            padding: 10px;
+            background-color: #3357bf;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+        }
+
+        .container-text{
+            border-top: 100px;
+            align-items: center;
+        }
+
+        .container-1{
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 48px;
+            background-color: rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://source.unsplash.com/random);
+            background-position: center;
+            height: 692px;
+            max-width: 2570px;
+            margin: auto;
+            text-align: center;
+            padding-top: 175px;
+            color: white; 
+        }
+
+        .container-1 a{
+            color: #268AEA;
+            text-decoration: none;
+        }
+
+        .container-text{
+            border-top: 100px;
+            align-items: center;
+        }
+
+        .container-4{
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 48px;
+            background-color: rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://source.unsplash.com/random);
+            background-position: center;
+            height: 692px;
+            max-width: 2559px; 
+            margin: auto;
+            text-align: center;
+            margin-top: 15px;
+            padding-top: 175px;
+            color: white;
+            
+        }
+
+        a{
+            color: #268AEA;
+            text-decoration: none;
+        }
+
+        .container-2{
+            display: none;
+            
+        }
+        
+        img:hover{
+            transform: rotate(-0.1deg);
+            opacity: 0.7;
+        }    
+
+        .container-3{
+            max-width: 2559px; 
+            justify-content: center;
+            margin: auto;
+            overflow: hidden;
+            height: 692px;
+            border: white solid 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-3 img{
+            width: 100%;
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            object-fit: cover;
+            border-radius: 1%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #container-link2{
+            padding-left: 100px;
+        }
+
+        .img-padding-left{
+            padding-left: 15px;
+        }
+
+        @media (max-width: 1235px) {
+            body{
+                display: none;
+                background-image: url(http://source.unsplash.com/random);
+            }
+        }
+
+        .container{
+            max-width: 2559px;
+            height: 600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .box-1,.box-2{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://source.unsplash.com/random);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 1300px;
+        }
+
+        .box-2{
+            margin-left: 15px;
+        }
+
+        .box-text{
+            padding-top: 155px;
+            color: aliceblue;
+            font-size: 35px;
+        }
+
+        
+
+        .InternContainer0{
+            max-width: 903px;
+            margin: 0 auto;      
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            
+        }
+
+        footer{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://source.unsplash.com/random);
+            background-position: center;
+            height: 100px;
+        }
+
+        .footerContainer {
+            max-width: 903px;
+            margin: 0 auto;      
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+        }
+
+        .floatEnd{
+            float: inline-end;
+        }
+
+        .footerContainer div{
+            display: inline;
+        }
+
+
+
+        footer a{
+            color: #268AEA;
+            text-decoration: none;
+        }
+
+        #HoverUnderlineText:hover {
+            text-decoration: underline;
+        }
+
+        #socialMedia{
+            height: 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="nav-bar">
+        <nav>
+            <ul>
+                <li><a href="#" class="link-nav">Lorem</a></li>
+                <li><a href="#" class="link-nav">ipsum</a></li>
+                <li><a href="#" class="link-nav">dolor</a></li>
+                <li><a href="#" class="link-nav">sit</a></li>
+                <li><a href="#" class="link-nav">amet</a></li>
+                <li><a href="#" class="link-nav">consectetur</a></li>
+                <li><a href="#" class="link-nav">adipisicing</a></li>
+                <li><a href="#" class="link-nav">elit</a></li>
+                <li><a href="#" class="link-nav">Totam</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="container-0">
+        <div class="InternContainer0">
+            <h1>Random</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+        </div>
+    </div>
+
+    <div class="container-1">
+        <div class="container-text">
+            <h1>Perspiciatis necessitatibus </h1>
+            <p>Esse explicabo officiis consectetur!<br>
+                <a href="#" id="HoverUnderlineText">Lorem ></a> &ensp;&ensp;&ensp;&ensp;
+                <a href="#" id="HoverUnderlineText">Ex quae ></a> 
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box-1">
+            <div class="box-text">
+                <h1>Voluptas delectus</h1>
+                <p>sapiente quae suscipit</p>
+                <p><a href="#"id="HoverUnderlineText">Lorem ></a>&ensp;&ensp;&ensp;&ensp;<a href="#"id="HoverUnderlineText">Ex quae ></a></p>
+            </div>
+        </div>
+        <div class="box-2">
+            <div class="box-text">
+                <h1>Deserunt soluta</h1>
+                <p>quam ducimus illo cumque</p>
+                <p><a href="#"id="HoverUnderlineText">Lorem ></a>&ensp;&ensp;&ensp;&ensp;<a href="#"id="HoverUnderlineText">Ex quae ></a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box-1">
+            <div class="box-text">
+                <h1>hic dolore</h1>
+                <p>maiores at quod</p>
+                <p><a href="#"id="HoverUnderlineText">Lorem ></a>&ensp;&ensp;&ensp;&ensp;<a href="#"id="HoverUnderlineText">Ex quae ></a></p>
+            </div>
+        </div>
+        <div class="box-2">
+            <div class="box-text">
+                <h1>Dolor a pariatur</h1>
+                <p>At voluptate explicabo veniam</p>
+                <p><a href="#"id="HoverUnderlineText">Lorem ></a>&ensp;&ensp;&ensp;&ensp;<a href="#"id="HoverUnderlineText">Ex quae ></a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerContainer">
+            <p style="font-size: 13px;">Copyright © 2023 Richard Inc. Todos os direitos reservados. Richard Sanvie Ltda. CNPJ: 33.288.990/0001-64</p>
+
+            <div>
+                <a href="https://www.linkedin.com/in/richardsanvie/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" id="socialMedia"></a>
+                <a href="https://www.instagram.com/richardsanvie/"><img src="https://freelogopng.com/images/all_img/1658586823instagram-logo-transparent.png" id="socialMedia"></a> Richardsanvie</p>
+            </div>           
+        </div>
+    </footer>
+    
+</div>
+
+</body>
+</html>
