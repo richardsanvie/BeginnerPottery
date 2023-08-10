@@ -18,14 +18,6 @@
         body {
             margin: 0 auto;
             overflow-x: hidden;
-        }
-        
-        .nav-bar{
-            background-color: rgba(0, 0, 0, 0.1);
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://source.unsplash.com/random);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
         }     
 
         nav {
@@ -52,12 +44,22 @@
             opacity: 0.7;
         }
 
+        .nav-bar,
+        .container-1,
+        .container-4,
+        footer,
+        .box-1,
+        .box-2{
+            background-color: rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("background.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
         .container-0{
             padding: 10px;
             background-color: #3357bf;
-            margin-left: auto;
-            margin-right: auto;
-            overflow: hidden;
         }
 
         .container-text{
@@ -65,56 +67,42 @@
             align-items: center;
         }
 
-        .container-1{
-            background-repeat: no-repeat;
-            background-size: cover;
+        .container-1,
+        .container-4{
             font-size: 48px;
-            background-color: rgba(0, 0, 0, 0.1);
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://source.unsplash.com/random);
-            background-position: center;
             height: 692px;
-            max-width: 2570px;
             margin: auto;
             text-align: center;
             padding-top: 175px;
             color: white; 
         }
 
-        .container-1 a{
-            color: #268AEA;
-            text-decoration: none;
+        .container{
+            height: 600px;
+            justify-content: center;
+            padding: 15px;
+            overflow: hidden;
+            text-align: center;
         }
 
-        .container-text{
-            border-top: 100px;
-            align-items: center;
+        .container-1{
+            max-width: 2570px; 
+        }
+
+        .container-4,
+        .container-3,
+        .container{
+            max-width: 2559px;
         }
 
         .container-4{
-            background-repeat: no-repeat;
-            background-size: cover;
-            font-size: 48px;
-            background-color: rgba(0, 0, 0, 0.1);
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://source.unsplash.com/random);
-            background-position: center;
-            height: 692px;
-            max-width: 2559px; 
-            margin: auto;
-            text-align: center;
-            margin-top: 15px;
-            padding-top: 175px;
-            color: white;
             
+            margin-top: 15px; 
         }
 
         a{
             color: #268AEA;
             text-decoration: none;
-        }
-
-        .container-2{
-            display: none;
-            
         }
         
         img:hover{
@@ -123,8 +111,6 @@
         }    
 
         .container-3{
-            max-width: 2559px; 
-            justify-content: center;
             margin: auto;
             overflow: hidden;
             height: 692px;
@@ -153,30 +139,33 @@
             padding-left: 15px;
         }
 
-        @media (max-width: 1235px) {
+        /@media (max-width: 852px) {
             body{
-                display: none;
-                background-image: url(http://source.unsplash.com/random);
+                background-color: rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("background.jpg");
+            background-size: cover;
             }
-        }
 
+            footer,
+            header,
+            section{
+                display: none;
+                
+            }
+        } 
+
+        .InternContainer0,
+        .footerContainer,
         .container{
-            max-width: 2559px;
-            height: 600px;
-            margin: 0 auto;
+            margin: 0 auto;      
             display: flex;
-            justify-content: center;
-            padding: 15px;
-            overflow: hidden;
-            text-align: center;
+            max-height: 600px;
         }
 
         .box-1,.box-2{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://source.unsplash.com/random);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            width: 1300px;
+            width: 100%;
+            display: flex;
+            align-items: center;
         }
 
         .box-2{
@@ -184,37 +173,24 @@
         }
 
         .box-text{
-            padding-top: 155px;
             color: aliceblue;
             font-size: 35px;
+            margin: 0 auto;
         }
 
-        
-
-        .InternContainer0{
+        .InternContainer0,
+        .footerContainer{
             max-width: 903px;
-            margin: 0 auto;      
-            display: flex;
-            justify-content: space-between;
             align-items: center; 
+            justify-content: space-between;
             
         }
 
         footer{
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: rgba(0, 0, 0, 0.1);
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://source.unsplash.com/random);
-            background-position: center;
             height: 100px;
         }
 
-        .footerContainer {
-            max-width: 903px;
-            margin: 0 auto;      
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .footerContainer{
             padding-top: 15px;
         }
 
@@ -226,13 +202,6 @@
             display: inline;
         }
 
-
-
-        footer a{
-            color: #268AEA;
-            text-decoration: none;
-        }
-
         #HoverUnderlineText:hover {
             text-decoration: underline;
         }
@@ -241,83 +210,112 @@
             height: 15px;
         }
 
+        #form{
+        max-width: 400px; 
+        margin: 0 auto
+        }
+
+        #form input{
+            padding: 10px; 
+            width: 100%; border: 1px solid #dddddd; border-radius: 5px; box-sizing: border-box; margin-bottom: 20px;
+        }
+
+        #buttonSubmit {
+            background-color: #268AEA !important;
+            color: #ffffff !important;
+            border: none !important;
+            padding: 12px 20px !important;
+            cursor: pointer !important;
+            border-radius: 5px !important;
+            width: 100% !important;
+        }
+        
     </style>
 
 </head>
 <body>
-    <div class="nav-bar">
-        <nav>
-            <ul>
-                <li><a href="#" class="link-nav">Lorem</a></li>
-                <li><a href="#" class="link-nav">ipsum</a></li>
-                <li><a href="#" class="link-nav">dolor</a></li>
-                <li><a href="#" class="link-nav">sit</a></li>
-                <li><a href="#" class="link-nav">amet</a></li>
-                <li><a href="#" class="link-nav">consectetur</a></li>
-                <li><a href="#" class="link-nav">adipisicing</a></li>
-                <li><a href="#" class="link-nav">elit</a></li>
-                <li><a href="#" class="link-nav">Totam</a></li>
-            </ul>
-        </nav>
-    </div>
+    <header>
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <li><a href="#" class="link-nav">Lorem</a></li>
+                    <li><a href="#" class="link-nav">ipsum</a></li>
+                    <li><a href="#" class="link-nav">dolor</a></li>
+                    <li><a href="#" class="link-nav">sit</a></li>
+                    <li><a href="#" class="link-nav">amet</a></li>
+                    <li><a href="#" class="link-nav">consectetur</a></li>
+                    <li><a href="#" class="link-nav">adipisicing</a></li>
+                    <li><a href="#" class="link-nav">elit</a></li>
+                    <li><a href="#" class="link-nav">Totam</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="container-0">
+            <div class="InternContainer0">
+                <h1>Random</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+            </div>
+        </div>
+    </header>
     
-    <div class="container-0">
-        <div class="InternContainer0">
-            <h1>Random</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
-        </div>
-    </div>
-
-    <div class="container-1">
-        <div class="container-text">
-            <h1>Perspiciatis necessitatibus </h1>
-            <p>Esse explicabo officiis consectetur!<br>
-                <a href="#" id="HoverUnderlineText">Lorem ></a> &ensp;&ensp;&ensp;&ensp;
-                <a href="#" id="HoverUnderlineText">Ex quae ></a> 
-            </p>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="box-1">
-            <div class="box-text">
-                <h1>Voluptas delectus</h1>
-                <p>sapiente quae suscipit</p>
-                <p><a href="#"id="HoverUnderlineText">Lorem ></a>&ensp;&ensp;&ensp;&ensp;<a href="#"id="HoverUnderlineText">Ex quae ></a></p>
+    <section>
+        <div class="container-1">
+            <div class="container-text">
+                <h1>Perspiciatis necessitatibus </h1>
+                <p>Esse explicabo officiis consectetur!<br>
+                    <a href="#" id="HoverUnderlineText">Lorem ></a> &ensp;&ensp;&ensp;&ensp;
+                    <a href="#" id="HoverUnderlineText">Ex quae ></a> 
+                </p>
             </div>
         </div>
-        <div class="box-2">
-            <div class="box-text">
-                <h1>Deserunt soluta</h1>
-                <p>quam ducimus illo cumque</p>
-                <p><a href="#"id="HoverUnderlineText">Lorem ></a>&ensp;&ensp;&ensp;&ensp;<a href="#"id="HoverUnderlineText">Ex quae ></a></p>
+    
+        <div class="container">
+            <div class="box-1">
+                <div class="box-text">
+                    <form action="#" method="post" id="form">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <label for="email" >E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <input type="submit" value="Enviar" id="buttonSubmit">
+                    </form>
+                </div>  
+            </div>
+            <div class="box-2">
+                <div class="box-text">
+                    <h1>Deserunt soluta</h1>
+                    <p>quam ducimus illo cumque</p>
+                    <p><a href="#"id="HoverUnderlineText">Lorem ></a>&ensp;&ensp;&ensp;&ensp;<a href="#"id="HoverUnderlineText">Ex quae ></a></p>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="box-1">
-            <div class="box-text">
-                <h1>hic dolore</h1>
-                <p>maiores at quod</p>
-                <p><a href="#"id="HoverUnderlineText">Lorem ></a>&ensp;&ensp;&ensp;&ensp;<a href="#"id="HoverUnderlineText">Ex quae ></a></p>
+    
+        <div class="container">
+            <div class="box-1">
+                <div class="box-text">
+                    <h1>hic dolore</h1>
+                    <p>maiores at quod</p>
+                    <p><a href="#"id="HoverUnderlineText">Lorem ></a>&ensp;&ensp;&ensp;&ensp;<a href="#"id="HoverUnderlineText">Ex quae ></a></p>
+                </div>
+            </div>
+            <div class="box-2">
+                <div class="box-text">
+                    <h1>Dolor a pariatur</h1>
+                    <p>At voluptate explicabo veniam</p>
+                    <p><a href="#"id="HoverUnderlineText">Lorem ></a>&ensp;&ensp;&ensp;&ensp;<a href="#"id="HoverUnderlineText">Ex quae ></a></p>
+                </div>
             </div>
         </div>
-        <div class="box-2">
-            <div class="box-text">
-                <h1>Dolor a pariatur</h1>
-                <p>At voluptate explicabo veniam</p>
-                <p><a href="#"id="HoverUnderlineText">Lorem ></a>&ensp;&ensp;&ensp;&ensp;<a href="#"id="HoverUnderlineText">Ex quae ></a></p>
-            </div>
-        </div>
-    </div>
-
+    </section>
+    
     <footer>
         <div class="footerContainer">
             <p style="font-size: 13px;">Copyright © 2023 Richard Inc. Todos os direitos reservados. Richard Sanvie Ltda. CNPJ: 33.288.990/0001-64</p>
 
             <div>
-                <a href="https://www.linkedin.com/in/richardsanvie/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" id="socialMedia"></a>
+                <p style="font-size: 13px;"><a href="https://www.linkedin.com/in/richardsanvie/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" id="socialMedia"></a>
                 <a href="https://www.instagram.com/richardsanvie/"><img src="https://freelogopng.com/images/all_img/1658586823instagram-logo-transparent.png" id="socialMedia"></a> Richardsanvie</p>
             </div>           
         </div>
