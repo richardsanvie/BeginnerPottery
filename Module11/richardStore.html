@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-sizing: border-box;
+        }
+
+        header{
+            margin: 0 auto;
+            color: aliceblue;
+        }
+
+        section{
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .Shoes{
+            height: 250px;
+            width: 100%;
+        }
+
+        .firstContainer,
+        .InternFirstHeader{
+            display: flex;
+            margin: 0 auto;
+        }
+
+        .shoesflex{
+            margin-top: 1px;
+            display: grid;
+            grid-template-columns: repeat(4, 24.62%);
+            column-gap: 0.5%;
+            margin-top: 2px;
+        }
+
+        .photo{
+            height: 250px;
+            width: 3000px;
+        }
+
+        .carroselShoes{
+            width: 100%;
+            font-size: 13px;
+        }
+
+        .InternFirstHeader{
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;   
+            padding: 15px 0;       
+        }
+
+        .firstHeader{
+            background-color: #3357bf;  
+        }
+
+        .firstHeader a{
+            text-decoration: none;
+            color: aliceblue;
+            margin-left: 6px;
+        }
+
+        .firstHeader a:hover{
+            opacity: 0.7;
+        }
+
+        .InternFirstContainer{
+            padding: 10px;
+        }
+        
+        .secondContainer{
+            margin: 15px 0;
+        }
+
+        .InternCarroselShoes{
+            width: 100%;
+            padding: 1%;
+            overflow: hidden;
+        }
+
+        .button{
+            background-color: #3357bf;
+            color: aliceblue;
+            padding: 5px;
+            border: 0;
+            border-radius: 3px;   
+            text-decoration: none;
+            width: 99%;
+            text-align: center;
+            display: block;
+            margin: 5px auto;
+        }
+
+        .button:hover{
+            background-color: #2babc9;
+        }
+
+        h2{   
+            color: #3357bf;
+        }
+
+        hr{
+            border: 1px solid #3357bf;
+            margin-bottom: 15px;
+        }
+
+        p{
+            font-size: 12px;
+        }
+
+        .InternCarroselShoes h2{
+            margin-bottom: 6px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="firstHeader">
+            <div class="InternFirstHeader">
+                <h1>Matheus Richard Sanvie</h1>
+                <div>
+                    <a href="https://www.linkedin.com/in/richardsanvie/">Trabalho Voluntário</a>
+                    <a href="https://www.linkedin.com/in/richardsanvie/">Meu caminho</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="firstContainer">
+            <img src="http://source.unsplash.com/random"class="photo">
+            <div class="InternFirstContainer">
+                <h2 class="tittle">Resumo profissional</h2>
+                <hr>
+                <p>Sou formado em <i>Química</i> e atualmente, tenho me
+                    dedicado a aprimorar minhas habilidades em
+                    programação. <b>Possuo habilidades em linguagens como
+                    SQL, JS, PHP, entre outras, bem como conhecimentos em
+                    frameworks de desenvolvimento web.</b> Além disso, possuo
+                    habilidades em design gráfico, o que pode ser um
+                    diferencial para projetos em desenvolvimento web. Estou
+                    animado para explorar novas possibilidades na área de
+                    programação e estou aberto a novas oportunidades que
+                    possam me ajudar a crescer profissionalmente</p>
+            </div>
+        </div>
+        
+        <div class="secondContainer">
+            <h2 class="tittle">Experiência Profissional e Formação</h2>
+            <hr>
+            <div class="shoesflex">
+                <div class="carroselShoes">
+                    <img src="http://source.unsplash.com/random" class="Shoes">
+                    <div class="InternCarroselShoes">
+                        <h2>Graduado em Química Licenciatura</h2>
+                        <p>UNIVERSIDADE DE BRASÍLIA <br>
+                            CONCLUÍDO EM 2021</p>
+                        <a href="https://www.linkedin.com/in/richardsanvie/" class="button">CEM 03</a>
+                    </div>
+                </div>
+                <div class="carroselShoes">
+                    <img src="http://source.unsplash.com/random" class="Shoes">
+                    <div class="InternCarroselShoes">
+                        <h2>Assessor de Negócios</h2>
+                        <p>Como sócio, eu contribuía para a identificação de oportunidades de negócios, planejamento e execução de estratégias de vendas, fornecia soluções criativas para melhorias nos processos e tomava decisões importantes para o sucesso da empresa.</p>
+                        <a href="https://www.linkedin.com/in/richardsanvie/" class="button">ACADEMIC GEEK LTDA</a>
+                    </div>
+                </div>
+                <div class="carroselShoes">
+                    <img src="http://source.unsplash.com/random" class="Shoes">
+                    <div class="InternCarroselShoes">
+                        <h2>Desenvolvedor web</h2>
+                        <p>Centro de educação profissional de ceilândia,<br>
+                        concluído em 2023.</p>
+                        <a href="https://www.linkedin.com/in/richardsanvie/" class="button">CENTRO EDUCACIONAL SIGMA</a>
+                    </div>
+                </div>
+                <div class="carroselShoes">
+                    <img src="http://source.unsplash.com/random" class="Shoes">
+                    <div class="InternCarroselShoes">
+                        <h2>Consultor químico</h2>
+                        <p>Eu era responsável por criar itens de prova para a empresa, que eram cuidadosamente desenvolvidos e adaptados para atender às necessidades específicas dos colégios que utilizavam seus serviços.</p>
+                        <a href="https://www.linkedin.com/in/richardsanvie/" class="button">PRINCÍPIA EDUCAÇÃO LTDA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
